@@ -1,0 +1,107 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn publish
+
+PATH: 
+  /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.11.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:137143:13)
+      at Interface.emit (node:events:390:28)
+      at Interface._ttyWrite (node:readline:1081:16)
+      at ReadStream.onkeypress (node:readline:288:10)
+      at ReadStream.emit (node:events:390:28)
+      at emitKeys (node:internal/readline/utils:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:internal/readline/emitKeypressEvents:61:36)
+      at ReadStream.emit (node:events:390:28)
+      at addChunk (node:internal/streams/readable:315:12)
+
+npm manifest: 
+  {
+    "name": "faker",
+    "description": "Generate massive amounts of fake contextual data",
+    "version": "5.5.4",
+    "contributors": [
+      "Marak Squires <marak.squires@gmail.com>"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "http://github.com/Marak/Faker.js.git"
+    },
+    "scripts": {
+      "browser": "./node_modules/.bin/gulp browser",
+      "jsdoc": "./node_modules/.bin/gulp jsdoc",
+      "readme": "./node_modules/.bin/gulp readme",
+      "lint": "node_modules/.bin/eslint ./lib/animal.js",
+      "test": "node_modules/.bin/mocha test/*.*.js",
+      "coverage": "nyc report --reporter=text-lcov | coveralls"
+    },
+    "nyc": {
+      "all": false,
+      "include": [
+        "lib/**/*.js",
+        "vendor/*.js"
+      ],
+      "exclude": [
+        "coverage",
+        "locales",
+        "modules",
+        "white",
+        "docs",
+        "docker",
+        "public",
+        "reports",
+        "tests",
+        "node_modules"
+      ],
+      "reporter": [
+        "html",
+        "lcov",
+        "clover"
+      ],
+      "report-dir": "./reports/coverage"
+    },
+    "devDependencies": {
+      "browserify": "^16.5.2",
+      "coveralls": "^3.1.0",
+      "eslint": "^6.5.1",
+      "gulp": "^4.0.2",
+      "gulp-gh-pages": "^0.5.4",
+      "gulp-jsdoc3": "^3.0.0",
+      "gulp-mustache": "^5.0.0",
+      "gulp-rename": "^2.0.0",
+      "gulp-uglify": "^3.0.2",
+      "ink-docstrap": "1.1.4",
+      "jsdoc": "^3.4.0",
+      "lint-staged": "^9.4.2",
+      "lodash": "^4.6.1",
+      "mocha": "^8.1.1",
+      "node-minify": "*",
+      "nyc": "^15.1.0",
+      "optimist": "0.3.5",
+      "sinon": "^9.0.3",
+      "through2": "2.0.0",
+      "vinyl-buffer": "^1.0.1",
+      "vinyl-source-stream": "^2.0.0",
+      "vinyl-transform": "^1.0.0"
+    },
+    "license": "MIT",
+    "main": "index.js",
+    "dependencies": {}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
