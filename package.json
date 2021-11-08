@@ -1,7 +1,7 @@
 {
   "name": "faker-utf",
   "description": "Generate massive amounts of fake contextual data",
-  "version": "5.5.4",
+  "version": "5.5.5",
   "contributors": [
     "Marak Squires <marak.squires@gmail.com>"
   ],
@@ -68,5 +68,6 @@
   },
   "license": "MIT",
   "main": "index.js",
+  "types": "types.d.ts",
   "dependencies": {}
 }
